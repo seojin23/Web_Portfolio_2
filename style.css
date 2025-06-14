@@ -1,0 +1,435 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'SBAggroM';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroM.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  font-family: SBAggroM;
+  border-radius: 0;
+  border-bottom: solid 1px rgb(81, 83, 87);
+}
+
+header .menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5px;
+  padding: 0;
+}
+
+header .menu ul li {
+  margin-left: 20px;
+}
+
+header .menu ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2em;
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+header .menu ul li a:hover {
+  background-color: rgb(242, 242, 242);
+}
+
+/* ==================================*/
+
+.main {
+  justify-content: center;
+}
+
+.main ul {
+  list-style: none;
+}
+
+.main h1 {
+  text-align: center;
+  font-family: SBAggroM;
+  font-size: 4rem;
+  margin: 2rem 0;
+}
+
+.main h2 {
+  text-align: center;
+  font-family: SBAggroM;
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+
+.main h3 {
+  font-size: 2.5rem;
+  letter-spacing: 0.2em;
+  padding: 1rem;
+}
+
+.main hr {
+  margin: 2rem 0;
+}
+
+.main a {
+  text-decoration: none;
+  color: black;
+}
+
+.profile {
+  margin: 1rem auto;
+  max-width: 60%;
+  text-align: center;
+}
+
+.profile .section-title {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+.profile .contact ul li {
+  margin: 0.5rem;
+}
+
+.profile .name {
+  margin-top: 3rem;
+}
+
+.profile img {
+  width: 25px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.profile ul li span {
+  margin-left: 0.5rem;
+}
+
+/* ==================================*/
+
+.projects {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.projects ul li {
+  margin-bottom: 2rem;
+}
+
+.projects .card {
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+  margin-bottom: 2rem;
+  transition: all 0.2s ease;
+  border-radius: 8px;
+}
+
+.projects .card a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: top;
+}
+
+.projects .card:hover {
+  transform: scale(1.05);
+}
+
+.projects .card .texts {
+  margin: 1rem 1.5rem;
+}
+
+.projects .card .link {
+  background-color: #222;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 1.1rem 0;
+}
+
+.projects .card .link span {
+  color: white;
+  font-weight: bold;
+  transform-origin: center;
+  transform: rotate(270deg);
+  display: block;
+  padding-right: 50%;
+}
+
+.projects .card .link img {
+  width: 25px;
+  height: auto;
+  filter: invert(1);
+  transform-origin: center;
+  transform: rotate(270deg);
+}
+
+.projects .title {
+  font-size: 1.5rem;
+}
+
+.projects .subtitle {
+  margin-bottom: 1rem;
+}
+
+/* ==================================*/
+
+.team-project {
+  max-width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.team-project h3 {
+  font-family: SBAggroM;
+  margin-top: 5rem;
+}
+
+.team-project .logo {
+  width: 70%;
+  height: auto;
+  margin: 3rem;
+  transition: all 0.2s ease;
+}
+
+.team-project .logo:hover {
+  transform: scale(1.05);
+}
+
+.team-project .links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 13rem;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  margin-bottom: 3rem;
+  border-radius: 8px;
+  box-shadow: 0 0 1rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.team-project .links img {
+  width: 2.1em;
+}
+
+.team-project .links .link {
+  background-color: rgb(242, 242, 242);
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+}
+
+.team-project .links > * {
+  transition: all 0.2s ease;
+}
+
+.team-project .VisualDS {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .team-project .links > *:hover {
+    transform: scale(1.05);
+  }
+}
+
+.team-project h4 {
+  font-size: 2rem;
+  margin-bottom: 1.3rem;
+}
+
+.team-project p {
+  margin-bottom: 1.2rem;
+  margin-left: 0.8rem;
+  word-break: keep-all;
+}
+
+.team-project p::before {
+  content: '•';
+  position: relative;
+  right: 0.8rem;
+}
+
+.team-project .desc {
+  width: fit-content;
+  margin: 0 auto;
+  padding-left: 1rem;
+  text-align: left;
+}
+
+/* ==================================*/
+
+.secon {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.secon h4 {
+  font-size: 2rem;
+  margin-bottom: 1.3rem;
+}
+
+.secon h5 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.secon p {
+  margin-bottom: 1rem;
+  margin-left: 0.8rem;
+}
+
+.secon p::before {
+  content: '•';
+  position: relative;
+  right: 0.8rem;
+}
+
+.secon a {
+  background-color: rgb(217, 217, 217);
+  border-radius: 5px;
+  padding: 0.3rem;
+  font-weight: bold;
+  font-size: 0.8rem;
+  transition: all 0.1s ease;
+}
+
+.secon a:hover {
+  color: #e60012;
+}
+
+/* ================================== */
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  header .menu {
+    width: 100%;
+  }
+
+  header .menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    overflow: visible;
+    margin: 0;
+    padding: 0 5px;
+  }
+
+  header .menu ul li {
+    margin: 0;
+    flex: 1;
+    text-align: center;
+  }
+
+  header .menu ul li a {
+    font-size: 1em;
+    padding: 5px;
+    width: 100%;
+    display: block;
+  }
+
+  .profile {
+    max-width: 80%;
+  }
+
+  .projects {
+    max-width: 90%;
+  }
+
+  .projects .card {
+    border: solid 1px black;
+  }
+
+  .projects .card a {
+    flex-direction: column;
+  }
+
+  .projects .card:hover {
+    transform: none;
+  }
+
+  .projects .card .texts {
+    margin: 0.7rem 1rem;
+  }
+
+  .projects .card .link {
+    display: inline;
+    text-align: left;
+    border-radius: 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 0;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+  }
+
+  .projects .card .link span {
+    transform: none;
+    font-size: smaller;
+    font-weight: 300;
+    margin-left: 1rem;
+  }
+
+  .projects .card .link img {
+    display: none;
+  }
+
+  .team-project {
+    max-width: 90%;
+  }
+
+  .team-project h3 {
+    font-size: 1.8rem;
+    margin-top: 3rem;
+    padding: 0;
+  }
+
+  .team-project .logo {
+    margin: 2rem;
+  }
+
+  .team-project .links {
+    width: 11rem;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .secon {
+    max-width: 90%;
+  }
+}
